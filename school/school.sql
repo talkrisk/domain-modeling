@@ -13,6 +13,23 @@ CREATE TABLE students (
   email TEXT,
   phone_number TEXT
 );
+CREATE TABLE teachers (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  first_name TEXT,
+  last_name TEXT,
+  bio TEXT
+);
+CREATE TABLE courses (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  course_name TEXT,
+  course_description TEXT
+);
+CREATE TABLE sections (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  sections_time TEXT,
+  course_id TEXT,
+  teacher_id TEXT
+);
 
 -- Create the rest of the tables
 
